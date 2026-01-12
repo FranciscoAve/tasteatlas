@@ -28,6 +28,11 @@ export default function DishTable( { data } : { data: Dish[] } ) {
             <TableCell align="right">{row.title} ({row.subtitle})</TableCell>
             
             {/* PENDIENTE: Valores a renderizar en cada celda  */}
+            <TableCell align="right">{row.country}</TableCell>
+            <TableCell align="right">{row.rating}</TableCell>
+            <TableCell align="right">{row.iconic}</TableCell>
+            <TableCell align="right">{row.ingredients}</TableCell>
+
             
           </TableRow>
         ))
@@ -52,6 +57,10 @@ export default function DishTable( { data } : { data: Dish[] } ) {
             <TableCell align='center'>Plato</TableCell>
             
             {/* PENDIENTE: Cabeceras de las columnas  */}
+           <TableCell align='center'>País</TableCell>
+           <TableCell align='center'>Rating</TableCell>
+           <TableCell align='center'>Restaurantes Icónicos</TableCell>
+           <TableCell align='center'>Ingredientes</TableCell>
 
           </TableRow>
         </TableHead>
